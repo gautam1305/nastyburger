@@ -1,0 +1,113 @@
+
+
+/* from big tablets to 1200px less than row=1140px*/
+@media only screen and (max-width:1200px){
+    .hero-text-box{
+        width: 100%;/*width of background image fits to the device screen upto 1200px. */
+        padding:0 2%;/*there is a padding on left and right side by 2% of available width.*/
+    } 
+    .row{
+        padding: 0 2%;/*so that all rows of the page has padding on left and right side of 2% equal to 24px.*/
+    }
+}
+
+
+/* small tablets to big tablets from  767px to 1024px */
+@media only screen and (max-width:1024px){
+    body{font-size:18px;
+    }
+    section{
+        padding:60 0;
+    } 
+    .long-copy{
+        width:80%;
+        margin-left: 10%;
+    }
+    .step-box{
+        margin-top:10px;
+    }
+    .step-box:last-child{
+        margin-top:10px;
+    }
+    .work-steps{
+        margin-bottom: 40px;
+    }
+    .work-steps:last-of-type{
+       margin-bottom: 60px; 
+    }
+    .app-screen{
+        width:50%;
+    }
+    .icon-small{width: 20px;}
+    .city-feature{font-size: 90%;}
+    .plan-box{width:100%;
+    margin-left: 0;}
+    .plan-price{font-size: 300%;}
+    .contact-form{width:80%;}
+}
+
+
+
+/* small phones to small tablets from 481 to 767px */
+@media only screen and (max-width:767px){
+    .row,hero-text-box{padding:0 4%; }  
+    .col{width:100%;}
+    h1{font-size: 180%;}
+    h2{font-size:150%;}
+    .long-copy{
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .work-steps{
+        margin-bottom: 20px;
+    }
+    .work-steps:last-of-type{
+       margin-bottom: 40px; 
+    }
+    .work-steps div{
+        height:40px;
+        width:40px;
+        margin-right: 15px;
+        padding:4px;
+        font-size:120%;
+    }
+    .step-box:first-child{
+        text-align:center;
+    }
+    .app-screen{
+        width: 40%;
+    }
+    .main-nav li{display: none;}
+    .mobile-nav-icon{
+        display:inline-block;
+        margin:15px;
+        }
+    .main-nav{
+        float:left;
+        display:block;
+       }
+    .main-nav-li{
+        position: relative;
+        display:block;
+        border:0;
+    }
+    .main-nav li a:link,
+.main-nav li a:visited
+    {
+        display: block;
+        
+    }
+}
+
+/* small phones from 0 to 480px */
+@media only screen and (max-width:480px){
+    section{
+        padding:25px 0;}
+    .contact-form{width:100%;}
+    
+}
+
+
+
+

@@ -1,0 +1,389 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html
+{
+background-color:white;
+    color:black;
+    font-family: 'lato','arial';
+    font-size:20px;
+    font-weight:300;
+    text-rendering: optimizeLegibility;
+}
+.row
+{
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+section
+{
+    padding:80px 0px;
+}
+
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    background-attachment: fixed;
+}
+.hero-text-box
+{
+    position:absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+h1,h2,h3
+{
+    font-weight:300;  
+    text-transform: uppercase;
+    letter-spacing:1px;
+    
+   
+}
+h1
+{
+    margin-bottom: 20px;
+   margin:0;
+    color:white;
+    font-size:240%;
+    word-spacing:4px;
+    }
+h2
+{
+   font-size:180%; 
+       word-spacing: 4px;
+    text-align: center;
+    margin-bottom:30px;
+}
+h2:after
+{
+    display:block;
+    height:2px;
+    width:10%;
+    background-color:orange;
+    margin:0 auto;
+    content: " ";
+    
+}
+.long-copy
+{
+    width:70%;
+    margin-left:15%;
+    margin-bottom:20px;
+}
+h3{
+    font-size:110%;
+    margin-bottom:15px;
+}
+.box p
+{
+    font-size: 90%;
+}
+.icon-big
+{
+    font-size:400%;
+    display: block;
+    color:orange;
+    margin-bottom:10px;
+}
+.btn:link,
+.btn:visited,
+input[type=submit]
+{
+    display: inline-block;
+    padding:10px 30px; 
+    font-weight:300;
+    text-decoration: none;
+    border-radius: 200px;
+    color:white;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover
+{
+    background-color: orange;
+}
+
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]
+{
+    background-color: orange;
+    border:1px solid orange;
+}
+.btn-ghost:link,
+.btn-ghost:visited
+{
+    border:1px solid pink;
+}
+
+.logo-black
+{
+    height:50px;
+    width:auto;
+    float:left;
+    margin-top:10px;
+    margin-left:40px;
+}
+
+
+.main-nav
+{
+    float:right;
+    list-style: none;
+    margin-top: 60px;
+    }
+.main-nav li
+{
+    display: inline-block;
+    margin-left:40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    padding: 8px 0;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+     border-bottom:2px solid transparent;
+}
+.main-nav{
+    margin-top:15px;
+}
+
+.mobile-nav-icon{
+    float:right;
+    margin-top: 30px;
+    cursor:pointer;
+    display:none;
+    
+}
+.mobile-nav-icon i{
+    font-size: 200%;
+    color:black;
+}
+.sticky{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(255,255,255,0.98);
+    box-shadow:2px 2px 2px;
+    z-index:9999;
+}
+.sticky.main-nav li a:link,
+.sticky.main-nav li a:visited
+{
+    padding: 8px 0;
+    color:black;
+   }
+
+
+.sticky.logo-black{
+    display: block;
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active
+{
+    border-bottom:2px solid orange;
+}
+.section-meals{padding: 0;}
+.meal-showcase
+{
+    list-style: none;
+    width:100%;
+    padding: 0%;
+    }
+.meals-showcase li
+{
+    display:block;
+    float:left;
+    width:25%;
+    
+}
+.meal-photo{
+    width:100%;
+    overflow:hidden;
+    background-color: black;
+    }
+.meal-photo img{
+    opacity:0.7;
+    width: 100%;
+    height: auto;
+    transform:scale(1.15);
+    transition: transform 0.5s,opacity:0.5s;
+    
+}
+.meal-photo img:hover{
+    opacity:1;
+    transform: scale(1.03);
+}
+.clearfix{zoom:1}
+.clearfix:after
+{
+    content:'.';
+    clear:both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
+
+.step-box:first-child
+{
+   text-align: right;
+    padding-right: 3%;
+    margin-top:30px;
+}
+.step-box:last-child
+{
+   padding-left: 3%;
+    margin-top:70px;
+}
+.app-screen
+{
+    width:50%
+}
+.work-steps{
+    margin-bottom: 50px;
+}
+.work-steps:last-of-type
+{
+    margin-bottom: 80px;
+}
+.work-steps div{
+    color:orange;
+    border:2px solid orange;
+    display:inline-block;
+    border-radius: 50%;
+    height:55px;
+    width:55px;
+    text-align: center;
+    padding:5px;
+    font-size:150%;
+    float:left;
+    margin-right:20px;
+}
+.btn-app img
+{ height:50px;
+width:auto;
+margin-right:10px;
+}
+
+
+.box img{
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+    float:left;}
+
+.btn-app:link
+{
+    border:0;
+}
+a:link
+{
+  text-decoration: none;
+    color:orange;
+    padding:1px;
+    border-bottom:1px solid orange;
+   }
+
+a:hover
+{
+    color:#555;
+   border-bottom:1px solid transparent;  
+}
+.section-testimonials{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/back-customers.jpg);
+    background-size:cover;
+    color:white;/* for text color white*/
+    background-attachment: fixed;
+}
+blockquote{
+    font-style: italic;
+    padding: 2%;
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display:block;/* all elements are inside rectangular block and aligned */
+}
+cite img{
+    height:50px;
+    border-radius: 50%;
+    vertical-align: middle;/* middle the aligned elements or elements of a block    */
+}
+.section-plans
+{
+    background-color: beige;
+}
+.plan-box{
+    background-color: white;
+    width:90%;
+    margin-left:5%;
+    border-radius:5px;
+}
+.plan-box div{
+   padding:20px;
+    border-bottom: 1px solid orange;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom:15px;
+    font-weight: 100;/*we have 100,300,400 available included from google font*/
+    color:orange;
+}
+.plan-price span{        /*here span is used just to divide that part of inline element which we want to style */
+    font-size: 30%;
+    font-weight: 300;
+    
+}
+.plan-box ul{
+    list-style:none;
+}
+.plan-box ul li{
+    padding:5px o;
+}
+.plan-box div:last-child{ /*to center sign up button*/
+    text-align: center;
+}
+.plan-box div:first-child{
+    background-color:grey;
+}
+.contact-form{
+    width:60%;
+    margin:0 auto;
+}
+footer
+{
+    background-color:black;
+}
+.footer-nav{
+    list-style: none;
+    float:left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display:inline-block;   /*to display inline*/
+    margin-right:20px;
+}
+
+
+
